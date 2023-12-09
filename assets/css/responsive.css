@@ -1,0 +1,62 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+  /* 1. ẩn navbar trên tablet và mobile */
+  .navbar {
+    display: none;
+  }
+  /* 2. chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  /*3. căn lại vị trí của menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    color: #fff;
+    width: 24px;
+  }
+
+  /* 4. overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  /* 5. kiểm tra nếu checkbox được check thì hiện overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Tablet  */
+@media (min-width: 768px) and (max-width: 991.98) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+}
+
+/* tạm ẩn phần không liên quan */
+.hero,
+.footer,
+main {
+  display: none;
+}
