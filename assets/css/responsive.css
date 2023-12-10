@@ -216,11 +216,125 @@
     display: none;
   }
 
-  .footer__top{
+  .footer__top {
     grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+
+  .show-on-mobile {
+    display: none;
   }
 }
 
 /* mobile */
 @media (max-width: 767.98px) {
+  .header__action {
+    display: none;
+  }
+
+  .menu-header__icon {
+    top: 16px;
+  }
+
+  .menu-drawer {
+    inset: 0 20% 0 0;
+    padding: 40px;
+  }
+
+  .navbar__item {
+    list-style-type: none;
+  }
+
+  /* thêm vạch kẻ ngăn cta group */
+  .separate {
+    border-top: 1.5px solid #8c8b8b;
+    margin-top: 10px;
+  }
+  /* hero */
+  .hero__img-small {
+    display: none;
+  }
+
+  .hero__img-large {
+    width: 100%;
+    height: auto;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  /* service */
+  .service {
+    padding: 70px 0;
+  }
+
+  .service__desc {
+    width: 93%;
+  }
+
+  .service__img {
+    height: auto;
+  }
+
+  /* work */
+  .work__desc {
+    width: 100%;
+  }
+
+  .work-item {
+    padding: 20px;
+  }
+
+  /* about */
+  .about {
+    margin-top: 20px;
+    padding: 40px 0;
+  }
+
+  .section-heading {
+    font-size: 3rem;
+  }
+
+  /* team */
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+
+  /* install */
+  .install__inner {
+    margin: 40px 0;
+    padding: 0 8px;
+  }
+
+  .install__content {
+    min-width: 250px;
+  }
+
+  .install__desc {
+    font-size: 1.3rem;
+  }
+
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .blog__heading {
+    text-align: center;
+  }
+
+  .appointment__inner {
+    padding: 30px 5px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
